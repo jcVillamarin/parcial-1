@@ -19,7 +19,8 @@
     width: 55px;
     height: 40px;
     left: 77%;
-    
+    background-color: transparent;
+    border: 0;
 }
 
 .search-bar-container{

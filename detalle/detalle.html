@@ -17,14 +17,20 @@
           <p id="used-units"></p>
           <p id="name"></p>
           <p id="price"></p>
-          <button class="btn-compra">Comprar</button>
-          <button class="btn-fav">Añadir a favoritos</button>
+          <button class="btn-compra" onclick="openComprarDialgo()">Comprar</button>
+          <button class="btn-fav" onclick="addFav()">Añadir a favoritos</button>
         </div>
         <div class="description-container">
           <p class="description-title">Descripcion</p>
           <p id="description">asdfasd</p>
         </div>
       </div>
+    </div>
+
+    <div id="dialog">
+      <p id="dialog-title"></p>
+      <p class="carro">Añadido al carrito de compras</p>
+      <button onclick="closeDialog()" class="btn-close">Close</button>
     </div>
     <script src="./detalle.js"></script>
     <script src="../tool-bar/tool-bar.js"></script>

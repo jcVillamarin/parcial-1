@@ -14,5 +14,11 @@ const applyFilter = () => {
   renderProducts();
 };
 
+const redirectfavs = () => {
+  console.log('asdfsfs');
+  console.log(window.location);
+  window.location.replace('/favorite/favorite.html');
+};
+
 getToolBarHtml();
 fetchStyle(`${window.location.origin}/tool-bar/tool-bar.css`);

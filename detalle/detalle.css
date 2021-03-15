@@ -155,3 +155,55 @@ color: #000000;
     color: #B8ACAC;
     width: 63%;
 }
+
+#dialog{
+    position: fixed;
+    top: 30%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    border: 2px solid #D5C9C9;
+    display: none;
+}
+
+#dialog-title{
+    position: relative;
+    width: 85%;
+    height: 31px;
+    left:5%;
+    top: 13%;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+}
+
+.carro{
+    position: relative;
+    width: 312px;
+    height: 51px;
+    left: 25%;
+    top: 20%;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+}
+
+.btn-close{
+    position: relative;
+    width: 145px;
+    height: 51px;
+    left: 70%;
+    top: 32%;
+    background: #8C86D7;
+    border-radius: 20px;
+    color: white;
+}

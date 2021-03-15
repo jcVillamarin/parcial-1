@@ -17,7 +17,7 @@ const getPrice = (price) => {
 
 const redirectDetalle = (product) => {
   localStorage.setItem('detalle', product);
-  window.location.href = './detalle/detalle.html';
+  window.location.replace('/detalle/detalle.html');
 };
 
 fetchStyle(`${window.location.origin}/product/product.css`);

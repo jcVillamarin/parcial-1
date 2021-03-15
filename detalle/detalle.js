@@ -1,6 +1,6 @@
 let products = [];
 let displayedProducts = [];
-
+let product;
 const loadProducts = async () => {
   const response = await request(
     'https://gist.githubusercontent.com/jhonatan89/719f8a95a8dce961597f04b3ce37f97b/raw/4b7f1ac723a14b372ba6899ce63dbd7c2679e345/products-ecommerce',
@@ -13,13 +13,13 @@ const loadProducts = async () => {
 
 const initDetalle = () => {
   const productId = localStorage.getItem('detalle');
-  const product = products.find((pro) => pro.id == productId);
+  product = products.find((pro) => pro.id == productId);
   let category = '';
   product.categories.forEach((element) => {
     category += `> ${element}`;
   });
   const units = `${getStatus(product.condition)} | ${product.sold_quantity}  Vendidos`;
-  document.getElementById('category').innerText = category;
+  document.getElementById('category-item').innerText = category;
   document.getElementById('img').src = product.picture;
 
   document.getElementById('used-units').innerText = units;
@@ -58,6 +58,26 @@ const getPrice = (price) => {
     style: 'currency',
     currency: price.currency,
   });
+};
+
+const openComprarDialgo = () => {
+  document.getElementById('dialog-title').innerText = product.title;
+  document.getElementById('dialog').style.display = 'block';
+};
+
+const closeDialog = () => {
+  document.getElementById('dialog').style.display = 'none';
+};
+
+const addFav = () => {
+  let favs = localStorage.getItem('favs');
+  if (favs) {
+    favs = JSON.parse(favs);
+    favs.push(product);
+  } else {
+    favs = [product];
+  }
+  localStorage.setItem('favs', JSON.stringify(favs));
 };
 
 const getStatus = (condition) => {
