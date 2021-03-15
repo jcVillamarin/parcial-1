@@ -1,0 +1,157 @@
+body{
+    background: #E5E5E5;
+}
+
+.tool-bar{
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+}
+
+
+#product{
+    position: relative;
+    top: 110px;
+    width: 88%;
+    left: 6%;
+    margin: 0;
+    height: 925px;
+}
+
+#category-item{
+    width: 520px;
+    height: 32px;
+    left: 99px;
+    top: 114px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: justify;
+
+    color: rgba(0, 0, 0, 0.67);
+
+}
+
+#product-container{
+    width: 100%;
+    height: 852px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+}
+
+#img-container{
+    width: 55%;
+    margin: 0;
+    display: inline-block;
+}
+
+.img{
+    width: 90%;
+    left: 5%;
+}
+
+.right-info{
+    width: 30%;
+    display: inline-block;
+    position: absolute;
+    top: 8%;
+    margin-left: 7%;
+}
+
+.btn-compra{
+    width: 312px;
+    height: 51px;
+    background: #C968CB;
+    border-radius: 20px;
+    margin-top: 5%;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+#used-units{
+    width: 312px;
+    height: 35px;
+
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+#name{
+    width: 312px;
+    height: 31px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+#price{
+    width: 312px;
+    height: 33px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 30%;
+}
+
+.btn-fav{
+    width: 312px;
+    height: 51px;
+    background: #8C86D7;
+    border-radius: 20px;
+    margin-top: 5%;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.description-title{
+    width: 312px;
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 28px;
+line-height: 34px;
+
+color: #000000;
+}
+
+.description-container{
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+#description{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: justify;
+    color: #B8ACAC;
+    width: 63%;
+}
