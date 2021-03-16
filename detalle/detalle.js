@@ -73,6 +73,7 @@ const addFav = () => {
   let favs = localStorage.getItem('favs');
   if (favs) {
     favs = JSON.parse(favs);
+    if (favs.find((element) => element.id == product.id)) return;
     favs.push(product);
   } else {
     favs = [product];

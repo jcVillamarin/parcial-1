@@ -8,6 +8,15 @@
     <title>Document</title>
   </head>
   <body>
+    <div class="tool-bar" id="tool-bar"></div>
+
+    <p class="fav-title">Favoritos</p>
+    <div class="actions-container">
+      <input type="checkbox" onclick="changeAll()" class="cbox2" id="cbox2" />
+      <button class="btn-eliminar" id="btn-eliminar" onclick="eliminar()">Eliminar</button>
+    </div>
+    <div id="products" class="products"></div>
+
     <script src="./favorite.js"></script>
     <script src="../tool-bar/tool-bar.js"></script>
   </body>
