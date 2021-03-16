@@ -48,7 +48,7 @@ const createProductHtml = (product) => {
   const productName = `<div class="product-name">${product.title}</div>`;
   priceVal = product.free_shipping ? `<div>${priceVal}<img src="../assets/shipping.png"/></div>` : `<div>${priceVal}</div>`;
   const priceInfo = `<div class="price-info">${priceVal}${productName}</div>`;
-  const check = `<input type="checkbox" onclick="changeCheck()" id="${product.id}" class="cbox2"/>`;
+  const check = `<input type="checkbox" onclick="changeCheck()" id="${product.id}" class="cbox"/>`;
   const img = `<button class="product-btn" onclick="redirectDetalle('${product.id}')"><img src="${product.picture}" class="product-icon" /></button>`;
   const btn = `<button class="btn-articulo" onclick="redirectDetalle('${product.id}')">Ver articulo</button>`;
   return `<div class="product">${check}${img}${priceInfo}${btn}</div>`;
@@ -69,7 +69,6 @@ const redirectDetalle = (product) => {
 const changeCheck = () => {
   valBtn = false;
   displayedProducts.forEach((element) => {
-    console.log(document.getElementById(element.id).checked);
     if (document.getElementById(element.id).checked) {
       valBtn = true;
     }
@@ -77,7 +76,6 @@ const changeCheck = () => {
   if (valBtn) {
     document.getElementById('btn-eliminar').style.background = '#E1677D';
   } else {
-    console.log('aaa');
     document.getElementById('btn-eliminar').style.background = '#ECE9E9';
   }
 };

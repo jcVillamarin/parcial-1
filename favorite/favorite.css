@@ -52,6 +52,16 @@ body{
     background: #C4C4C4;
 }
 
+.cbox{
+    display: inline-block;
+    position: relative;
+    top: 40%;
+    left: 3%;
+    width: 20px;
+    height: 20px;
+    background: #C4C4C4;
+}
+
 .btn-eliminar{
     display: inline-block;
     position: absolute;
